@@ -2,22 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --font-open-sans: 'Open Sans', sans-serif;
   --font-merriweather-sans: 'Merriweather Sans', sans-serif;
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #404040;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-merriweather-sans), sans-serif;
+  color: #003578;
 }
 
 body {
