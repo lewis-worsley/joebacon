@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 :root {
+  --font-open-sans: 'Open Sans', sans-serif;
+  --font-merriweather-sans: 'Merriweather Sans', sans-serif;
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -14,8 +16,12 @@
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-merriweather-sans), sans-serif;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-open-sans), Helvetica, sans-serif;
 }
