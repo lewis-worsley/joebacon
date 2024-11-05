@@ -5,13 +5,11 @@ import "./globals.css";
 const openSans = localFont({
   src: "./fonts/OpenSans.woff",
   variable: "--font-open-sans",
-  weight: "300 700",
 });
 
 const merriweatherSans = localFont({
   src: "./fonts/MerriweatherSans.woff",
   variable: "--font-merriweather-sans",
-  weight: "300 700",
 });
 
 export const metadata: Metadata = {
