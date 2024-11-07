@@ -6,7 +6,7 @@ import Services from "@/components/Services";
 
 export default function Home() {
   return (
-    <div className="my-20">
+    <div>
       <Header />
       <main>
         <Intro />
