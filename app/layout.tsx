@@ -15,6 +15,7 @@ const merriweatherSans = localFont({
 export const metadata: Metadata = {
   title: "Joe Bacon Marketing & Communications Consultancy",
   description: "Affordable marketing and communication services for small and medium-sized enterprises",
+  icons: { icon: 'favicon.svg' },
 };
 
 export default function RootLayout({
