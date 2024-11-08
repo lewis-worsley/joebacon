@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from './ui/button';
+import MobileNav from './MobileNav';
 
 const Header = () => {
 	const navLinks = [
@@ -21,7 +22,7 @@ const Header = () => {
 	return (
 		<header className='drop-shadow-lg shadow-md sticky'>
 			<nav className='container py-5'>
-				<div className='flex flex-row justify-between'>
+				<div className='flex flex-row justify-between items-center'>
 					<div>
 						<Link href="/">
 							<Image
@@ -32,12 +33,13 @@ const Header = () => {
 							/>
 						</Link>
 					</div>
-					<div className='space-x-10 md:space-x-20 font-bold text-blue-1 text-[14px]'>
+					<div className='space-x-10 md:space-x-20 font-bold text-blue-1 text-[14px] hidden sm:block'>
 						{navLinks.map(({ name, href }) => (
 							<Link href={href} key={name}>{name}</Link>
 						))}
 						<Button>Free Consultation</Button>
 					</div>
+					<MobileNav />
 				</div>
 			</nav>
 		</header>

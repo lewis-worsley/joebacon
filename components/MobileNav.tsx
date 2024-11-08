@@ -1,0 +1,56 @@
+
+import { Button } from "@/components/ui/button"
+
+import {
+	Sheet,
+	SheetClose,
+	SheetContent,
+	SheetTrigger
+} from "@/components/ui/sheet"
+
+import { navLinks } from "@/constants"
+import { Menu } from 'lucide-react'
+import Image from "next/image"
+import Link from "next/link"
+
+const MobileNav = () => {
+	return (
+		<section className='sm:hidden'>
+			<Sheet>
+				<SheetTrigger asChild>
+					<Menu
+						className="cursor-pointer"
+					/>
+				</SheetTrigger>
+				<SheetContent
+					side="top"
+					className='border-none'
+					aria-describedby="Navigation menu; the following links include Services, About and Portfolio"
+				>
+					<SheetClose asChild>
+						<Link href="/">
+							<Image
+								src="logo.svg"
+								alt="logo"
+								width={120}
+								height={20}
+							/>
+						</Link>
+					</SheetClose>
+					<div className="overflow-y-auto">
+						<nav className="flex flex-col gap-y-10 my-10">
+							{navLinks.map(({ label, href }) => (
+								<SheetClose key={label} className="hover:text-blue-2">
+									<Link href={href} className="font-bold text-blue-1 hover:text-gray-500">{label}</Link>
+								</SheetClose>
+							))}
+							<Button>Free Consultation</Button>
+						</nav>
+					</div>
+				</SheetContent>
+			</Sheet>
+		</section>
+	);
+};
+
+export default MobileNav
