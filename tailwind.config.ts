@@ -28,6 +28,9 @@ const config: Config = {
 					1: "#003578",
 					2: "#0047A3",
 				},
+				grey: {
+					1: "#F5F5F5",
+				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
 					foreground: 'hsl(var(--popover-foreground))'

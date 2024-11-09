@@ -16,6 +16,7 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-merriweather-sans), sans-serif;
   color: #003578;
+  font-weight: bold;
 }
 
 body {
@@ -24,7 +25,8 @@ body {
 }
 
 small {
-  color: #947454;
+  color: #404040;
+  font-weight: bold;
 }
 
 @layer base {
