@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --font-open-sans: 'Open Sans', sans-serif;
   --font-merriweather-sans: 'Merriweather Sans', sans-serif;
