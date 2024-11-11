@@ -28,6 +28,9 @@ const config: Config = {
 					1: "#003578",
 					2: "#0047A3",
 				},
+				white: {
+					1: "#FFFFFF",
+				},
 				grey: {
 					1: "#F5F5F5",
 				},

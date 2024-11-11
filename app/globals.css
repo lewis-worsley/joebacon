@@ -29,6 +29,15 @@ small {
   font-weight: bold;
 }
 
+.bg-experience {
+  background-image: url('/images/bokeh-light-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 53, 120, 0.95);
+  background-blend-mode: darken;
+}
+
 @layer base {
   :root {
     --radius: 0.5rem;
