@@ -33,6 +33,7 @@ const config: Config = {
 				},
 				grey: {
 					1: "#F5F5F5",
+					2: "#404040",
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
