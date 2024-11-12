@@ -20,8 +20,8 @@ const Header = () => {
 	];
 
 	return (
-		<header className='drop-shadow-lg shadow-md sticky'>
-			<nav className='container py-5'>
+		<header className='drop-shadow-lg shadow-md sticky top-0 backdrop-blur-md bg-white-1' id='/'>
+			<nav className='container py-5 '>
 				<div className='flex flex-row justify-between items-center'>
 					<div>
 						<Link href="/">
@@ -37,7 +37,11 @@ const Header = () => {
 						{navLinks.map(({ name, href }) => (
 							<Link href={href} key={name}>{name}</Link>
 						))}
-						<Button>Free Consultation</Button>
+						<Button asChild>
+							<Link href="mailto:joefbacon@icloud.com?subject=Marketing%20Inquiry">
+								Free consultation
+							</Link>
+						</Button>
 					</div>
 					<MobileNav />
 				</div>
