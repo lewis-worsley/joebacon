@@ -45,8 +45,7 @@ const Footer = () => {
 					<div className="space-y-10 mt-10 md:mt-0">
 						<div className="flex gap-5 sm:gap-10 font-bold justify-center md:justify-start">
 							<a href="#services">Services</a> |
-							<a href="#about">About</a> |
-							<a href="">Portfolio</a>
+							<a href="#about">About</a>
 						</div>
 						<div className="text-center md:text-start">
 							Joe Bacon - a Marketing & Communications consultant in the UK helping small to
