@@ -1,4 +1,5 @@
 import { navLinks } from '@/constants';
+import { CalendarCheck2 } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import MobileNav from './MobileNav';
@@ -25,7 +26,7 @@ const Header = () => {
 						))}
 						<Button asChild>
 							<Link href="mailto:joefbacon@icloud.com?subject=Marketing%20Inquiry">
-								Free consultation
+								Free consultation <CalendarCheck2 />
 							</Link>
 						</Button>
 					</div>

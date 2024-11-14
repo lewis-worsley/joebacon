@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/sheet";
 
 import { navLinks } from "@/constants";
-import { Menu } from 'lucide-react';
+import { CalendarCheck2, Menu } from 'lucide-react';
 import Image from "next/image";
 import Link from "next/link";
 
@@ -43,7 +43,11 @@ const MobileNav = () => {
 									<Link href={href} className="font-bold text-blue-1 hover:text-gray-500">{label}</Link>
 								</SheetClose>
 							))}
-							<Button>Free Consultation</Button>
+							<Button asChild>
+								<Link href="mailto:joefbacon@icloud.com?subject=Marketing%20Inquiry">
+									Free Consultation <CalendarCheck2 />
+								</Link>
+							</Button>
 						</nav>
 					</div>
 				</SheetContent>
