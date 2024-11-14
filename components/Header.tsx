@@ -1,24 +1,10 @@
+import { navLinks } from '@/constants';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from './ui/button';
 import MobileNav from './MobileNav';
+import { Button } from './ui/button';
 
 const Header = () => {
-	const navLinks = [
-		{
-			name: "Services",
-			href: "#services",
-		},
-		{
-			name: "About",
-			href: "#about",
-		},
-		{
-			name: "Portfolio",
-			href: "#portfolio",
-		},
-	];
-
 	return (
 		<header className='drop-shadow-lg shadow-md sticky top-0 backdrop-blur-md bg-white-1 z-50' id='/'>
 			<nav className='container py-5'>
@@ -34,8 +20,8 @@ const Header = () => {
 						</Link>
 					</div>
 					<div className='space-x-10 md:space-x-20 font-bold text-blue-1 text-[14px] hidden sm:block'>
-						{navLinks.map(({ name, href }) => (
-							<Link href={href} key={name}>{name}</Link>
+						{navLinks.map(({ label, href }) => (
+							<Link href={href} key={label}>{label}</Link>
 						))}
 						<Button asChild>
 							<Link href="mailto:joefbacon@icloud.com?subject=Marketing%20Inquiry">

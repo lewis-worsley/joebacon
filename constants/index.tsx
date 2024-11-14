@@ -9,10 +9,6 @@ export const navLinks = [
 		label: "About",
 		href: "#about",
 	},
-	{
-		label: "Portfolio",
-		href: "#portfolio",
-	},
 ];
 
 export const tabsData = [
