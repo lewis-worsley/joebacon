@@ -1,84 +1,8 @@
-import {
-  Atom,
-  Camera,
-  ChartColumnIncreasing,
-  CircleCheck,
-  Folders,
-  MessageCircleMore,
-  MonitorCheck,
-  PencilRuler,
-  PenLine,
-  Presentation,
-  Send
-} from 'lucide-react';
-
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { tabsData } from '@/constants';
+import { support, tabsData, whatIOffer } from '@/constants';
+import { CircleCheck } from 'lucide-react';
 
 const Services = () => {
-  const support = [
-    "I'll use my industry knowledge to unlock your brand's potential",
-    "I’ll help you develop a marketing plan",
-    "I’ll be on-hand to help you achieve your business goals"
-  ];
-
-  const StyledIcon = (IconComponent: any) => {
-    return <IconComponent color="#0047A3" size={40} />
-  };
-
-  const whatIOffer = [
-    {
-      icon: StyledIcon(ChartColumnIncreasing),
-      label: "Strategic Marketing Planning",
-      description: "Define target audiences and messaging, customised marketing plans and most effective channels",
-    },
-    {
-      icon: StyledIcon(PencilRuler),
-      label: "Corporate Branding",
-      description: "Original concepts, adjustments or complete re-brands",
-    },
-    {
-      icon: StyledIcon(Atom),
-      label: "Brand Management",
-      description: "Digital stationery, email signatures, working document management",
-    },
-    {
-      icon: StyledIcon(Folders),
-      label: "Marketing Collateral",
-      description: "Case studies, brochures, bid templates, staff profiles/CVs, banners, flyers, stationery and vehicle livery designs",
-    },
-    {
-      icon: StyledIcon(MonitorCheck),
-      label: "Websites",
-      description: "New conversion-focused sites, improvements, maintenance, newsfeed and updates",
-    },
-    {
-      icon: StyledIcon(MessageCircleMore),
-      label: "Social Media",
-      description: "New profiles, account maintenance, content creation and planning, campaign management",
-    },
-    {
-      icon: StyledIcon(Send),
-      label: "Internal Communications",
-      description: "Staff newsletters, bulletins, branded internal emails",
-    },
-    {
-      icon: StyledIcon(Presentation),
-      label: "Presentations",
-      description: "Creating and adjusting templates",
-    },
-    {
-      icon: StyledIcon(Camera),
-      label: "Photography & Video",
-      description: "Case study images, staff photographs, media release images, corporate videos",
-    },
-    {
-      icon: StyledIcon(PenLine),
-      label: "PR Liaison",
-      description: "Editorial copywriting and media relations",
-    },
-  ];
-
   return (
     <section className='bg-grey-1 py-20 text-center md:text-start' id='services'>
       <div className='container space-y-10'>
