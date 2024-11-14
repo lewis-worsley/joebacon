@@ -20,8 +20,8 @@ const Header = () => {
 	];
 
 	return (
-		<header className='drop-shadow-lg shadow-md sticky top-0 backdrop-blur-md bg-white-1' id='/'>
-			<nav className='container py-5 '>
+		<header className='drop-shadow-lg shadow-md sticky top-0 backdrop-blur-md bg-white-1 z-50' id='/'>
+			<nav className='container py-5'>
 				<div className='flex flex-row justify-between items-center'>
 					<div>
 						<Link href="/">
