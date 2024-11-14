@@ -62,27 +62,27 @@ const Experience = () => {
               className="flex flex-col items-center justify-center overflow-hidden rounded-full md:w-[250px] md:h-[250px] lg:w-[300px] lg:h-[300px] bg-white-1 mx-auto md:mt-10 lg:mt-0"
             >
               <Image
-                src="/images/joe-bacon.png"
+                src="/images/joe-bacon-headshot.jpg"
                 alt="Joe Bacon"
                 width={225}
                 height={225}
                 className="object-contain object-top pt-16 pl-8"
               />
             </div>
-            <div className="mt-5 place-self-center space-y-5 items-center justify-items-center">
-              <div className="flex gap-2 items-center font-bold">
+            <div className="mt-5 place-self-center space-y-5 items">
+              <div className="flex gap-2 items-center font-bold justify-center">
                 <Phone size={20} />
                 <a href="tel:07541200062" className="text-white">
                   07541 200062
                 </a>
               </div>
-              <div className="flex gap-2 items-center font-bold">
+              <div className="flex gap-2 items-center font-bold justify-center">
                 <Mail size={20} />
                 <a href="mailto:joefbacon@icloud.com?subject=Marketing%20Inquiry">
                   joefbacon@icloud.com
                 </a>
               </div>
-              <div className="flex gap-2 items-center font-bold">
+              <div className="flex gap-2 items-center font-bold justify-center">
                 <ExternalLink size={20} />
                 <a
                   href="https://linkedin.com/in/joefbacon"
