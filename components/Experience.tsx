@@ -8,6 +8,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { contactDetails } from "@/constants";
 
 const Experience = () => {
   const keyStrengths = [
@@ -73,13 +74,13 @@ const Experience = () => {
               <div className="flex gap-2 items-center font-bold justify-center">
                 <Phone size={20} />
                 <a href="tel:07541200062" className="text-white">
-                  07541 200062
+                  {contactDetails.phone}
                 </a>
               </div>
               <div className="flex gap-2 items-center font-bold justify-center">
                 <Mail size={20} />
                 <a href="mailto:joefbacon@icloud.com?subject=Marketing%20Inquiry">
-                  joefbacon@icloud.com
+                  {contactDetails.email}
                 </a>
               </div>
               <div className="flex gap-2 items-center font-bold justify-center">
@@ -90,7 +91,7 @@ const Experience = () => {
                   rel="noopener noreferrer"
                   className="text-white"
                 >
-                  linkedin.com/in/joefbacon
+                  {contactDetails.linkedIn}
                 </a>
               </div>
             </div>

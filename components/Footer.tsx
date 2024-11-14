@@ -1,3 +1,4 @@
+import { contactDetails } from "@/constants";
 import { ExternalLink, Mail, Phone } from "lucide-react";
 import Image from "next/image";
 
@@ -20,13 +21,13 @@ const Footer = () => {
 							<div className="flex gap-2 items-center justify-center md:justify-start font-bold">
 								<Phone size={20} />
 								<a href="tel:07541200062" className="text-white">
-									07541 200062
+									{contactDetails.phone}
 								</a>
 							</div>
 							<div className="flex gap-2 items-center justify-center md:justify-start font-bold">
 								<Mail size={20} />
 								<a href="mailto:joefbacon@icloud.com?subject=Marketing%20Inquiry">
-									joefbacon@icloud.com
+									{contactDetails.email}
 								</a>
 							</div>
 							<div className="flex gap-2 items-center justify-center md:justify-start font-bold">
@@ -37,7 +38,7 @@ const Footer = () => {
 									rel="noopener noreferrer"
 									className="text-white"
 								>
-									linkedin.com/in/joefbacon
+									{contactDetails.linkedIn}
 								</a>
 							</div>
 						</div>

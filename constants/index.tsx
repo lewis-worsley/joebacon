@@ -108,3 +108,9 @@ export const whatIOffer = [
 		description: "Editorial copywriting and media relations",
 	},
 ];
+
+export const contactDetails = {
+	phone: "07541 200062",
+	email: "joefbacon@icloud.com",
+	linkedIn: "linkedin.com/in/joefbacon",
+};
