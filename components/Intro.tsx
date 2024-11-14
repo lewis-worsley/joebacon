@@ -1,6 +1,7 @@
 import { Award, ChartNoAxesCombined, Hourglass } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Intro = () => {
   const about = [
@@ -37,8 +38,16 @@ const Intro = () => {
             Flexible and affordable marketing and communication services for small and medium-sized enterprises.
           </p>
           <div className="flex space-x-5 pb-5">
-            <Button variant="default">Get expert marketing help</Button>
-            <Button variant="ghost">Services</Button>
+            <Button variant="default" asChild>
+              <Link href="mailto:joefbacon@icloud.com?subject=Marketing%20Inquiry">
+                Get expert marketing help
+              </Link>
+            </Button>
+            <Button variant="ghost" className="bg-blue-4" asChild>
+              <Link href="#services">
+                Services
+              </Link>
+            </Button>
           </div>
           <div className="flex flex-col sm:flex-row gap-5 text-sm text-blue-1 font-bold">
             {about.map(({ icon, description }, index) => (
