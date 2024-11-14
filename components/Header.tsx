@@ -22,7 +22,7 @@ const Header = () => {
 					</div>
 					<div className='space-x-10 md:space-x-20 font-bold text-blue-1 text-[14px] hidden sm:block'>
 						{navLinks.map(({ label, href }) => (
-							<Link href={href} key={label}>{label}</Link>
+							<Link href={href} key={label} className='hover:text-gray-500'>{label}</Link>
 						))}
 						<Button asChild>
 							<Link href="mailto:joefbacon@icloud.com?subject=Marketing%20Inquiry">
