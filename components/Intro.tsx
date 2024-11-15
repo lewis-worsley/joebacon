@@ -7,7 +7,7 @@ const Intro = () => {
   const about = [
     {
       icon: <Hourglass size={20} />,
-      description: "15+ years of experience",
+      description: "Experience since 2008",
     },
     {
       icon: <Award size={20} />,
@@ -32,7 +32,7 @@ const Intro = () => {
           />
         </div>
         <div className="order-2 md:order-1 flex flex-col space-y-5 text-center md:text-left place-items-center md:place-items-start md:mr-10">
-          <small className="font-bold text-[14px] md:text-[16px]">Marketing & Communications consultant</small>
+          <small className="font-bold text-[14px] md:text-[16px]">Marketing & Communications Consultant</small>
           <h1 className="text-2xl lg:text-4xl font-bold">Marketing & Communication Services</h1>
           <p className="md:w-[90%] lg:w-[60%] lg:text-lg">
             Flexible and affordable marketing and communication services for small and medium-sized enterprises.
@@ -43,7 +43,7 @@ const Intro = () => {
                 Get expert marketing help
               </Link>
             </Button>
-            <Button variant="ghost" className="bg-blue-4" asChild>
+            <Button variant="ghost" className="hover:bg-transparent" asChild>
               <Link href="#services">
                 Services
               </Link>
