@@ -110,10 +110,10 @@ export const whatIOffer = [
 ];
 
 export const keyStrengths = [
-	"15+ years of Marketing & Communications experience",
+	"Marketing and communications experience since 2008",
 	"NCTJ-Qualified Journalist",
 	"Proven track record of success",
-	"Understanding of the entire spectrum of marketing",
+	"Understanding of the entire spectrum of marketing and communications",
 	"Craft compelling narratives for your business",
 	"Develop effective marketing strategies to achieve your business goals",
 ];

@@ -14,13 +14,15 @@ const Experience = () => {
   return (
     <section className='py-20 bg-experience text-center md:text-start' id="about">
       <div className='container'>
-        <small className='font-bold text-[14px] md:text-[16px] text-white-1'>15+ Years of Marketing & Communications Expertise</small>
+        <small className='font-bold text-[14px] md:text-[16px] text-white-1'>
+          Marketing & Communications Expertise Since 2008
+        </small>
         <h2 className='text-xl md:text-2xl text-white-1 mt-5'>Your Partner in Marketing & Communications</h2>
         <div className='grid md:grid-cols-2'>
           <div className="mt-5 space-y-5 text-white-1">
             <p>
-              I'm a results-driven marketing and communications consultant with more than 15 years
-              of dedicated experience spearheading dynamic teams for industry-leading contractors
+              I'm a results-driven marketing and communications consultant with dedicated experience
+              since 2008 of spearheading dynamic teams for industry-leading contractors
               and SMEs in the construction sector.
             </p>
             <p>
@@ -62,26 +64,31 @@ const Experience = () => {
               />
             </div>
             <div className="mt-5 place-self-center space-y-5 items">
-              <div className="flex gap-2 items-center font-bold justify-center">
-                <Phone size={20} />
-                <a href="tel:07541200062" className="text-white">
+              <div className="flex font-bold justify-center">
+                <a className="flex gap-2 items-center" href="tel:07541200062">
+                  <Phone size={20} />
                   {contactDetails.phone}
                 </a>
               </div>
-              <div className="flex gap-2 items-center font-bold justify-center">
-                <Mail size={20} />
-                <a href="mailto:joefbacon@icloud.com?subject=Marketing%20Inquiry">
+              <div className="flex font-bold justify-center">
+                <a className="flex gap-2 items-center" href="mailto:joefbacon@icloud.com?subject=Marketing%20Inquiry">
+                  <Mail size={20} />
                   {contactDetails.email}
                 </a>
               </div>
-              <div className="flex gap-2 items-center font-bold justify-center">
-                <ExternalLink size={20} />
+              <div className="flex font-bold justify-center">
                 <a
                   href="https://linkedin.com/in/joefbacon"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white"
+                  className="flex gap-2 items-center"
                 >
+                  <Image
+                    src="linkedIn.svg"
+                    alt="LinkedIn logo"
+                    height={20}
+                    width={20}
+                  />
                   {contactDetails.linkedIn}
                 </a>
               </div>
