@@ -1,5 +1,4 @@
 import { contactDetails } from "@/constants";
-import { ExternalLink, Mail, Phone } from "lucide-react";
 import Image from "next/image";
 
 const Footer = () => {
@@ -17,30 +16,20 @@ const Footer = () => {
 								className="mb-10"
 							/>
 						</a>
-						<div className="space-y-5 justify-center">
-							<div className="flex gap-2 items-center justify-center md:justify-start font-bold">
-								<Phone size={20} />
-								<a href="tel:07541200062" className="text-white">
-									{contactDetails.phone}
-								</a>
-							</div>
-							<div className="flex gap-2 items-center justify-center md:justify-start font-bold">
-								<Mail size={20} />
-								<a href="mailto:joefbacon@icloud.com?subject=Marketing%20Inquiry">
-									{contactDetails.email}
-								</a>
-							</div>
-							<div className="flex gap-2 items-center justify-center md:justify-start font-bold">
-								<ExternalLink size={20} />
-								<a
-									href="https://linkedin.com/in/joefbacon"
-									target="_blank"
-									rel="noopener noreferrer"
-									className="text-white"
-								>
-									{contactDetails.linkedIn}
-								</a>
-							</div>
+						<div className="space-y-5">
+							{contactDetails.map(({ type, href, label, icon }) => (
+								<div key={type} className="flex gap-2 justify-center md:justify-start font-bold">
+									<a
+										href={href}
+										target={type === "linkedIn" ? "_blank" : undefined}
+										rel={type === "linkedIn" ? "noopener noreferrer" : undefined}
+										className="flex gap-2 items-center"
+									>
+										{icon}
+										{label}
+									</a>
+								</div>
+							))}
 						</div>
 					</div>
 					<div className="space-y-10 mt-10 md:mt-0">
