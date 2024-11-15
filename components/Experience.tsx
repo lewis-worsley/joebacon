@@ -1,10 +1,7 @@
 import { contactDetails, keyStrengths } from "@/constants";
 import {
   CalendarCheck2,
-  CircleCheck,
-  ExternalLink,
-  Mail,
-  Phone
+  CircleCheck
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -63,35 +60,20 @@ const Experience = () => {
                 className="object-contain object-top pt-16 pl-8"
               />
             </div>
-            <div className="mt-5 place-self-center space-y-5 items">
-              <div className="flex font-bold justify-center">
-                <a className="flex gap-2 items-center" href="tel:07541200062">
-                  <Phone size={20} />
-                  {contactDetails.phone}
-                </a>
-              </div>
-              <div className="flex font-bold justify-center">
-                <a className="flex gap-2 items-center" href="mailto:joefbacon@icloud.com?subject=Marketing%20Inquiry">
-                  <Mail size={20} />
-                  {contactDetails.email}
-                </a>
-              </div>
-              <div className="flex font-bold justify-center">
-                <a
-                  href="https://linkedin.com/in/joefbacon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex gap-2 items-center"
-                >
-                  <Image
-                    src="linkedIn.svg"
-                    alt="LinkedIn logo"
-                    height={20}
-                    width={20}
-                  />
-                  {contactDetails.linkedIn}
-                </a>
-              </div>
+            <div className="mt-5 space-y-5">
+              {contactDetails.map(({ type, href, label, icon }) => (
+                <div key={type} className="flex font-bold justify-center">
+                  <a 
+                    href={href}
+                    className="flex gap-2 items-center"
+                    target={type === "linkedIn" ? "_blank" : undefined}
+                    rel={type === "linkedIn" ? "noopener noreferrer" : undefined}
+                  >
+                    {icon}
+                    {label}
+                  </a>
+                </div>
+              ))}
             </div>
           </div>
         </div>

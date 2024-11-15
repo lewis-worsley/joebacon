@@ -6,14 +6,17 @@ import {
 	ChartColumnIncreasing,
 	Folders,
 	Handshake,
+	Mail,
 	MessageCircleMore,
 	MonitorCheck,
 	PencilRuler,
 	PenLine,
+	Phone,
 	Presentation,
 	Send,
 	Target
 } from "lucide-react";
+import Image from "next/image";
 
 export const support = [
   `I'll use my industry knowledge to unlock your brand's potential`,
@@ -118,8 +121,30 @@ export const keyStrengths = [
 	"Develop effective marketing strategies to achieve your business goals",
 ];
 
-export const contactDetails = {
-	phone: "07541 200062",
-	email: "joefbacon@icloud.com",
-	linkedIn: "linkedin.com/in/joefbacon",
-};
+export const contactDetails = [
+  {
+    type: "phone",
+    href: "tel:07541200062",
+    label: "07541200062",
+    icon: <Phone size={20} />,
+  },
+  {
+    type: "email",
+    href: "mailto:joefbacon@icloud.com?subject=Marketing%20Inquiry",
+    label: "joefbacon@icloud.com",
+    icon: <Mail size={20} />,
+  },
+  {
+    type: "linkedIn",
+    href: "https://linkedin.com/in/joefbacon",
+    label: "linkedin.com/in/joefbacon",
+    icon: (
+      <Image
+        src="linkedIn.svg"
+        alt="LinkedIn logo"
+        height={20}
+        width={20}
+      />
+    ),
+  },
+];
