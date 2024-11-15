@@ -20,7 +20,7 @@ const Header = () => {
 							/>
 						</Link>
 					</div>
-					<div className='space-x-10 md:space-x-20 font-bold text-blue-1 text-[14px] hidden sm:block'>
+					<div className='space-x-7 md:space-x-14 lg:space-x-20 font-bold text-blue-1 text-[14px] hidden sm:block'>
 						{navLinks.map(({ label, href }) => (
 							<Link href={href} key={label} className='hover:text-gray-500'>{label}</Link>
 						))}

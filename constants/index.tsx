@@ -19,9 +19,9 @@ import {
 import Image from "next/image";
 
 export const support = [
-  `I'll use my industry knowledge to unlock your brand's potential`,
-  `I’ll help you develop a marketing plan`,
-  `I’ll be on-hand to help you achieve your business goals`,
+	`I'll use my industry knowledge to unlock your brand's potential`,
+	`I’ll help you develop a marketing plan`,
+	`I’ll be on-hand to help you achieve your business goals`,
 ];
 
 export const navLinks = [
@@ -33,6 +33,10 @@ export const navLinks = [
 		label: "About",
 		href: "#about",
 	},
+	{
+		label: "Testimonials",
+		href: "#testimonials",
+	}
 ];
 
 export const tabsData = [
@@ -122,29 +126,29 @@ export const keyStrengths = [
 ];
 
 export const contactDetails = [
-  {
-    type: "phone",
-    href: "tel:07541200062",
-    label: "07541200062",
-    icon: <Phone size={20} />,
-  },
-  {
-    type: "email",
-    href: "mailto:joefbacon@icloud.com?subject=Marketing%20Inquiry",
-    label: "joefbacon@icloud.com",
-    icon: <Mail size={20} />,
-  },
-  {
-    type: "linkedIn",
-    href: "https://linkedin.com/in/joefbacon",
-    label: "linkedin.com/in/joefbacon",
-    icon: (
-      <Image
-        src="linkedIn.svg"
-        alt="LinkedIn logo"
-        height={20}
-        width={20}
-      />
-    ),
-  },
+	{
+		type: "phone",
+		href: "tel:07541200062",
+		label: "07541200062",
+		icon: <Phone size={20} />,
+	},
+	{
+		type: "email",
+		href: "mailto:joefbacon@icloud.com?subject=Marketing%20Inquiry",
+		label: "joefbacon@icloud.com",
+		icon: <Mail size={20} />,
+	},
+	{
+		type: "linkedIn",
+		href: "https://linkedin.com/in/joefbacon",
+		label: "linkedin.com/in/joefbacon",
+		icon: (
+			<Image
+				src="linkedIn.svg"
+				alt="LinkedIn logo"
+				height={20}
+				width={20}
+			/>
+		),
+	},
 ];
