@@ -109,6 +109,15 @@ export const whatIOffer = [
 	},
 ];
 
+export const keyStrengths = [
+	"15+ years of Marketing & Communications experience",
+	"NCTJ-Qualified Journalist",
+	"Proven track record of success",
+	"Understanding of the entire spectrum of marketing",
+	"Craft compelling narratives for your business",
+	"Develop effective marketing strategies to achieve your business goals",
+];
+
 export const contactDetails = {
 	phone: "07541 200062",
 	email: "joefbacon@icloud.com",

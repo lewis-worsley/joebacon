@@ -1,3 +1,4 @@
+import { contactDetails, keyStrengths } from "@/constants";
 import {
   CalendarCheck2,
   CircleCheck,
@@ -8,18 +9,8 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { contactDetails } from "@/constants";
 
 const Experience = () => {
-  const keyStrengths = [
-    "15+ years of Marketing & Communications experience",
-    "NCTJ-Qualified Journalist",
-    "Proven track record of success",
-    "Understanding of the entire spectrum of marketing",
-    "Craft compelling narratives for your business",
-    "Develop effective marketing strategies to achieve your business goals",
-  ];
-
   return (
     <section className='py-20 bg-experience text-center md:text-start' id="about">
       <div className='container'>
