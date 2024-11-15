@@ -2,6 +2,7 @@ import { StyledIcon } from "@/utils/helpers";
 import {
 	Atom,
 	BookOpenCheck,
+	BookText,
 	Camera,
 	ChartColumnIncreasing,
 	Folders,
@@ -113,6 +114,11 @@ export const whatIOffer = [
 		icon: StyledIcon(PenLine),
 		label: "PR Liaison",
 		description: "Editorial copywriting and media relations",
+	},
+	{
+		icon: StyledIcon(BookText),
+		label: "Bid Writing",
+		description: "Text to come",
 	},
 ];
 

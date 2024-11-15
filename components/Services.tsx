@@ -10,7 +10,7 @@ const Services = () => {
           <small className='font-bold text-[14px] md:text-[16px]'>Services designed to elevate your business</small>
           <h2 className='text-xl md:text-2xl'>Expert Marketing Support For Your Business</h2>
           <p className='md:w-[60%]'>
-            With over 15 years’ experience in marketing and communications, I specialise in
+            With experience in marketing and communications since 2008, I specialise in
             helping businesses elevate their brand, engage their audience, and achieve measurable
             results. From strategic planning to hands-on execution, my services are tailored
             to meet your unique needs and drive real growth.
@@ -77,7 +77,7 @@ const Services = () => {
               >
                 {icon}
                 <h4 className="text-[16px] text-blue-2 mt-2">{label}</h4>
-                <p className="mt-2 w-[80%] md:w-[100%]">{description}</p>
+                <p className="mt-2 w-[80%] md:w-[90%] break-before-right">{description}</p>
               </div>
             ))}
           </div>
