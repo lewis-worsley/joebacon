@@ -18,15 +18,16 @@ const Experience = () => {
         <div className='grid md:grid-cols-2'>
           <div className="mt-5 space-y-5 text-white-1">
             <p>
-              I'm a results-driven marketing and communications consultant with dedicated experience
-              since 2008 of spearheading dynamic teams for industry-leading contractors
-              and SMEs in the construction sector.
+              {`I'm a results-driven marketing and communications consultant with dedicated experience
+                since 2008 of spearheading dynamic teams for industry-leading contractors
+                and SMEs in the construction sector.`}
             </p>
             <p>
-              Throughout my career, I've developed my skills in crafting and executing comprehensive
-              marketing and communications strategies that elevate brands, drive engagement and
-              generate measurable results.
+              {`Throughout my career, I've developed my skills in crafting and executing comprehensive
+                marketing and communications strategies that elevate brands, drive engagement and
+                generate measurable results.`}
             </p>
+
             <div className="space-y-5 pt-5 pb-5">
               {keyStrengths.map((strength, index) => (
                 <span key={index} className="flex gap-2 text-sm items-center text-start sm:place-content-center md:place-content-start">
@@ -63,7 +64,7 @@ const Experience = () => {
             <div className="mt-5 space-y-5">
               {contactDetails.map(({ type, href, label, icon }) => (
                 <div key={type} className="flex font-bold justify-center">
-                  <a 
+                  <a
                     href={href}
                     className="flex gap-2 items-center"
                     target={type === "linkedIn" ? "_blank" : undefined}
