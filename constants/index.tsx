@@ -5,6 +5,7 @@ import {
 	BookText,
 	Camera,
 	ChartColumnIncreasing,
+	FileImage,
 	Folders,
 	Handshake,
 	Mail,
@@ -118,7 +119,12 @@ export const whatIOffer = [
 	{
 		icon: StyledIcon(BookText),
 		label: "Bid Writing",
-		description: "Text to come",
+		description: "My NCTJ skills and experience allow me to create compelling proposals to help you win and retain business",
+	},
+	{
+		icon: StyledIcon(FileImage),
+		label: "Graphic Design",
+		description: "Create visual content to communicate messages and optimise user experience",
 	},
 ];
 
