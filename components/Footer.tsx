@@ -9,7 +9,7 @@ const Footer = () => {
 					<div className="flex flex-col items-center md:items-start">
 						<a href="#/">
 							<Image
-								src="/joe-bacon-logo-in-white.svg"
+								src="/images/joe-bacon-white-logo.png"
 								alt="Joe Bacon logo"
 								width={150}
 								height={40}
