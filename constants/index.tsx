@@ -1,13 +1,16 @@
 import { StyledIcon } from "@/utils/helpers";
 import {
 	Atom,
+	Award,
 	BookOpenCheck,
 	BookText,
 	Camera,
 	ChartColumnIncreasing,
+	ChartNoAxesCombined,
 	FileImage,
 	Folders,
 	Handshake,
+	Hourglass,
 	Mail,
 	MessageCircleMore,
 	MonitorCheck,
@@ -19,6 +22,21 @@ import {
 	Target
 } from "lucide-react";
 import Image from "next/image";
+
+export const about = [
+	{
+		icon: <Hourglass size={20} className="min-w-5" />,
+		description: "Experience since 2008",
+	},
+	{
+		icon: <Award size={20} className="min-w-5" />,
+		description: "NCTJ-qualified journalist",
+	},
+	{
+		icon: <ChartNoAxesCombined size={20} className="min-w-5" />,
+		description: "Expert in business growth",
+	},
+];
 
 export const support = [
 	`I'll use my industry knowledge to unlock your brand's potential`,

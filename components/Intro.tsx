@@ -1,24 +1,9 @@
-import { Award, ChartNoAxesCombined, Hourglass } from "lucide-react";
+import { about } from "@/constants";
 import Image from "next/image";
-import { Button } from "./ui/button";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 const Intro = () => {
-  const about = [
-    {
-      icon: <Hourglass size={20} />,
-      description: "Experience since 2008",
-    },
-    {
-      icon: <Award size={20} />,
-      description: "NCTJ-qualified journalist",
-    },
-    {
-      icon: <ChartNoAxesCombined size={20} />,
-      description: "Expert in business growth",
-    },
-  ];
-
   return (
     <section className="container mt-10 mb-20 md:my-0 md:mt-10">
       <div className="flex flex-col md:flex-row md:justify-between items-center">
@@ -49,7 +34,7 @@ const Intro = () => {
               </Link>
             </Button>
           </div>
-          <div className="flex flex-col sm:flex-row gap-5 text-sm text-blue-1 font-bold">
+          <div className="flex flex-col sm:flex-row gap-5 text-sm text-blue-1 font-bold items-center">
             {about.map(({ icon, description }, index) => (
               <div key={index} className="flex items-center gap-2">
                 {icon}
