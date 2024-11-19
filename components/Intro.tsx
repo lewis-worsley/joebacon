@@ -28,7 +28,7 @@ const Intro = () => {
                 Get expert marketing help
               </Link>
             </Button>
-            <Button variant="ghost" className="hover:bg-transparent" asChild>
+            <Button variant="ghost" className="bg-gray-100 hover:bg-gray-200" asChild>
               <Link href="#services">
                 Services
               </Link>
