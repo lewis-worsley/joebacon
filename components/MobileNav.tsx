@@ -16,7 +16,7 @@ import Link from "next/link";
 
 const MobileNav = () => {
 	return (
-		<section className='sm:hidden'>
+		<section className='md:hidden'>
 			<Sheet>
 				<SheetTrigger asChild>
 					<Menu className="cursor-pointer" aria-label="menu" />
@@ -30,9 +30,9 @@ const MobileNav = () => {
 					<SheetClose asChild>
 						<Link href="/">
 							<Image
-								src="logo.svg"
+								src="/images/2-1.jpg"
 								alt="logo"
-								width={120}
+								width={150}
 								height={20} />
 						</Link>
 					</SheetClose>

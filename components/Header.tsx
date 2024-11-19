@@ -8,21 +8,19 @@ import { Button } from './ui/button';
 const Header = () => {
 	return (
 		<header className='drop-shadow-lg shadow-md sticky top-0 backdrop-blur-md bg-white-1 z-50' id='/'>
-			<nav className='container py-5'>
+			<nav className='container py-3'>
 				<div className='flex flex-row justify-between items-center'>
 					<div>
 						<Link href="/">
 							<Image
-								src="/images/joe-bacon-horizontal-blue-logo.jpg"
+								src="/images/2-1.jpg"
 								alt='Joe Bacon logo'
-								width={120
-									
-								}
-								height={20}
+								width={180}
+								height={40}
 							/>
 						</Link>
 					</div>
-					<div className='space-x-7 md:space-x-14 lg:space-x-20 font-bold text-blue-1 text-[14px] hidden sm:block'>
+					<div className='space-x-7 md:space-x-12 lg:space-x-20 font-bold text-blue-1 text-[14px] hidden md:block'>
 						{navLinks.map(({ label, href }) => (
 							<Link href={href} key={label} className='hover:text-gray-500'>{label}</Link>
 						))}
