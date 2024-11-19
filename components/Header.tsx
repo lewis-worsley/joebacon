@@ -13,7 +13,7 @@ const Header = () => {
 					<div>
 						<Link href="/">
 							<Image
-								src="/images/2-1.jpg"
+								src="/images/joe-bacon-logo-in-blue.jpg"
 								alt='Joe Bacon logo'
 								width={180}
 								height={40}

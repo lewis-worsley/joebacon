@@ -30,7 +30,7 @@ const MobileNav = () => {
 					<SheetClose asChild>
 						<Link href="/">
 							<Image
-								src="/images/2-1.jpg"
+								src="/images/joe-bacon-logo-in-blue.jpg"
 								alt="logo"
 								width={150}
 								height={20} />
