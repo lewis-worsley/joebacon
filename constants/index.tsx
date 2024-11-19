@@ -159,7 +159,7 @@ export const contactDetails = [
 	{
 		type: "phone",
 		href: "tel:07541200062",
-		label: "07541200062",
+		label: "07541 200062",
 		icon: <Phone size={20} />,
 	},
 	{
