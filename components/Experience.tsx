@@ -41,8 +41,8 @@ const Experience = () => {
               asChild
             >
               <Link
-                href="mailto:joefbacon@icloud.com?subject=Marketing%20Consultation&body=Hello%20Joe,%0D%0A%0D%0AI'm%20interested%20in%20your%20services."
-                aria-label="Send an email to book a free marketing consultation"
+                href="mailto:info@joebaconconsulting.com?subject=Marketing%20and%20Communications%20Enquiry"
+                aria-label="Send an email to book a free marketing and communications consultation with Joe Bacon"
               >
                 Book a free consultation
                 <CalendarCheck2 />

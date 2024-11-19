@@ -24,7 +24,10 @@ const Intro = () => {
           </p>
           <div className="flex space-x-5 pb-5">
             <Button variant="default" asChild>
-              <Link href="mailto:joefbacon@icloud.com?subject=Marketing%20Inquiry">
+              <Link
+                href="mailto:info@joebaconconsulting.com?subject=Marketing%20and%20Communications%20Enquiry"
+                aria-label="Send an email to book a free marketing and communications consultation with Joe Bacon"
+              >
                 Get expert marketing help
               </Link>
             </Button>

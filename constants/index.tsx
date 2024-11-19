@@ -164,8 +164,8 @@ export const contactDetails = [
 	},
 	{
 		type: "email",
-		href: "mailto:joefbacon@icloud.com?subject=Marketing%20Inquiry",
-		label: "joefbacon@icloud.com",
+		href: "mailto:info@joebaconconsulting.com?subject=Marketing%20and%20Communications%20Enquiry",
+		label: "info@joebaconconsulting.com",
 		icon: <Mail size={20} />,
 	},
 	{
