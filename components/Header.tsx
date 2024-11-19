@@ -15,7 +15,7 @@ const Header = () => {
 							<Image
 								src="/images/joe-bacon-logo-in-blue.jpg"
 								alt='Joe Bacon logo'
-								width={180}
+								width={150}
 								height={40}
 							/>
 						</Link>
