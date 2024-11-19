@@ -13,8 +13,8 @@ const merriweatherSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Joe Bacon",
-  description: "Marketing & Communications Consultant in the UK",
+  title: "Joe Bacon Consulting: UK Marketing & Communications Services",
+  description: "Experienced Marketing & Communications Consultant in the UK, helping businesses elevate their brand, engage audiences, and achieve measurable results.",
   icons: { 
     icon: '/favicon.jpg',
     apple: '/icons/touch-icon.png',
