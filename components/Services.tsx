@@ -39,9 +39,9 @@ const Services = () => {
                 ))}
               </div>
             </div>
-            <div className="md:w-auto rounded-none mt-5 md:mt-0">
+            <div className="md:w-auto mt-5 md:mt-0">
               <Tabs defaultValue="knowledge" className='text-center'>
-                <TabsList className='rounded-none w-full md:text-base'>
+                <TabsList className='w-full md:text-base'>
                   {tabsData.map(({ value, title, className }) => (
                     <TabsTrigger
                       value={value}
