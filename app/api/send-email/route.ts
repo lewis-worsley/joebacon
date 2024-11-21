@@ -32,7 +32,7 @@ export async function POST(req: Request) {
 			from: "noreply@joebaconconsulting.com",
 			to: process.env.EMAIL_USER as string,
 			replyTo: email,
-			subject,
+			subject: subject,
 			text: `Message from: ${email}\n\n${message}`,
 		};
 
