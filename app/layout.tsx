@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Toaster } from "@/components/ui/toaster";
 
 const openSans = localFont({
   src: "./fonts/OpenSans.woff",
@@ -32,6 +33,7 @@ export default function RootLayout({
         className={`${openSans.variable} ${merriweatherSans.variable} antialiased`}
       >
         {children}
+        <Toaster />
       </body>
     </html>
   );
