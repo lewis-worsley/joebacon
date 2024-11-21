@@ -33,7 +33,8 @@ const MobileNav = () => {
 								src="/images/joe-bacon-logo-in-blue.jpg"
 								alt="logo"
 								width={150}
-								height={20} />
+								height={20} 
+							/>
 						</Link>
 					</SheetClose>
 					<div className="overflow-y-auto">
