@@ -41,6 +41,14 @@ small {
   background-blend-mode: darken;
 }
 
+.bg-contact-form {
+  background-image: url('/images/logo-square.jpg');
+  background-position: center;
+  background-repeat: repeat;
+  background-color: rgba(245, 245, 245, 1);
+  background-blend-mode: lighten;
+}
+
 @layer base {
   :root {
     --radius: 0.5rem;
