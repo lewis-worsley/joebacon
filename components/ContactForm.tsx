@@ -15,6 +15,7 @@ import {
 	FormMessage
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import { Textarea } from "./ui/textarea";
 
@@ -27,6 +28,7 @@ const ContactFormSchema = z.object({
 type ContactFormValues = z.infer<typeof ContactFormSchema>;
 
 const ContactForm = () => {
+	const { toast } = useToast();
 	const [status, setStatus] = useState<string | null>(null);
 
 	const form = useForm<ContactFormValues>({
@@ -50,16 +52,33 @@ const ContactForm = () => {
 
 			if (response.ok) {
 				setStatus("Email sent successfully!");
+				toast({
+					title: "Success! Thanks for reaching out!",
+					description: "Your message has been sent!",
+					variant: "primary",
+				});
 				form.reset();
 			} else {
-				setStatus(result.error || "Something went wrong. Please try again")
+				setStatus(result.error || "Something went wrong. Please try again.");
+				toast({
+					title: "Failed to Send Email",
+					description:
+						result.error ||
+						"We encountered an issue while sending your message. Please try again later.",
+					variant: "destructive",
+				});
 			}
-
-		} catch (error) {
+		} catch (error: any) {
 			console.error(error);
 			setStatus("An error occurred. Please try again later.");
+			toast({
+				title: "Unexpected Error",
+				description:
+					"Something went wrong on our end. Please refresh the page and try again.",
+				variant: "destructive",
+			});
 		}
-	}
+	};
 
 	return (
 		<section className="py-20 bg-contact-form">
@@ -79,7 +98,7 @@ const ContactForm = () => {
 								control={form.control}
 								name="email"
 								render={({ field }) => (
-									<FormItem className="grid md:grid-cols-3 items-center">
+									<FormItem className="md:grid md:grid-cols-3 items-center">
 										<FormLabel className="col-span-1">Email*</FormLabel>
 										<FormControl className="md:col-span-2">
 											<Input placeholder="youremail@address.com" {...field} />
@@ -93,7 +112,7 @@ const ContactForm = () => {
 								control={form.control}
 								name="subject"
 								render={({ field }) => (
-									<FormItem className="grid md:grid-cols-3 items-center">
+									<FormItem className="md:grid md:grid-cols-3 items-center">
 										<FormLabel className="col-span-1">Subject line*</FormLabel>
 										<FormControl className="md:col-span-2">
 											<Input placeholder="Enter subject line" {...field} />
@@ -107,7 +126,7 @@ const ContactForm = () => {
 								control={form.control}
 								name="message"
 								render={({ field }) => (
-									<FormItem className="grid md:grid-cols-3 items-start gap-2">
+									<FormItem className="md:grid md:grid-cols-3 items-start gap-2">
 										<FormLabel className="col-span-1">Message*</FormLabel>
 										<div className=" md:col-span-2 space-y-2">
 											<FormDescription>
@@ -130,7 +149,7 @@ const ContactForm = () => {
 								Submit
 							</Button>
 							{status && (
-								<p className="mt-2 text-center text-sm text-gray-600">{status}</p>
+								<p className="mt-2 px-5 text-center text-sm">{status}</p>
 							)}
 						</form>
 					</Form>
