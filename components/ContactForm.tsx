@@ -90,8 +90,8 @@ const ContactForm = () => {
 							className="space-y-5 align"
 						>
 							<div className="space-y-3">
-								<h2 className="text-2xl">Let`&apos`s Work Together</h2>
-								<p>You`&apos`re welcome to book a free consultation, just mention a date and time in your message.</p>
+								<h2 className="text-2xl">Let&apos;s Work Together</h2>
+								<p>You&apos;re welcome to book a free consultation, just mention a date and time in your message.</p>
 							</div>
 
 							<FormField
@@ -130,7 +130,7 @@ const ContactForm = () => {
 										<FormLabel className="col-span-1">Message*</FormLabel>
 										<div className=" md:col-span-2 space-y-2">
 											<FormDescription>
-												Tell me about your business and what services you`&apos`re interested in.
+												Tell me about your business and what services you&apos;re interested in.
 											</FormDescription>
 											<FormControl>
 												<Textarea
