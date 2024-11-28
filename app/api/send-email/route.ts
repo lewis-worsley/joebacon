@@ -42,7 +42,7 @@ export async function POST(req: Request) {
 			JSON.stringify({ success: "Email sent successfully" }),
 			{ status: 200 }
 		);
-	} catch (error: any) {
+	} catch (error) {
 		console.error("Error sending email:", error);
 		return new Response(
 			JSON.stringify({ error: "Failed to send email" }),
