@@ -182,3 +182,21 @@ export const contactDetails = [
 		),
 	},
 ];
+
+export const frequentlyAskedQuestions = [
+	{
+		value: "item-1",
+		title: "Frequently Asked Question 1",
+		description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Nisl dignissim mauris imperdiet dictum ultricies."
+	},
+	{
+		value: "item-2",
+		title: "Frequently Asked Question 2",
+		description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Nisl dignissim mauris imperdiet dictum ultricies."
+	},
+	{
+		value: "item-3",
+		title: "Frequently Asked Question 3",
+		description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Nisl dignissim mauris imperdiet dictum ultricies."
+	},
+];
