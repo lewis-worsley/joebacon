@@ -61,7 +61,7 @@ const ContactForm = () => {
 			} else {
 				setStatus(result.error || "Something went wrong. Please try again.");
 				toast({
-					title: "Failed to Send Email",
+					title: "Failed to send email!",
 					description:
 						result.error ||
 						"We encountered an issue while sending your message. Please try again later.",
