@@ -33,7 +33,7 @@ const MobileNav = () => {
 								src="/images/joe-bacon-logo-in-blue.jpg"
 								alt="logo"
 								width={150}
-								height={20} 
+								height={20}
 							/>
 						</Link>
 					</SheetClose>
@@ -44,14 +44,16 @@ const MobileNav = () => {
 									<Link href={href} className="font-bold text-blue-1 hover:text-gray-500">{label}</Link>
 								</SheetClose>
 							))}
-							<Button asChild>
-								<Link
-									href="mailto:info@joebaconconsulting.com?subject=Marketing%20and%20Communications%20Enquiry"
-									aria-label="Send an email to book a free marketing and communications consultation with Joe Bacon"
-								>
-									Free Consultation <CalendarCheck2 />
-								</Link>
-							</Button>
+							<SheetClose asChild>
+								<Button asChild>
+									<Link
+										href="#contact"
+										aria-label="Send an email to book a free marketing and communications consultation with Joe Bacon"
+									>
+										Free Consultation <CalendarCheck2 />
+									</Link>
+								</Button>
+							</SheetClose>
 						</nav>
 					</div>
 				</SheetContent>

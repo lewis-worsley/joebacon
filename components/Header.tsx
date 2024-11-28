@@ -26,7 +26,7 @@ const Header = () => {
 						))}
 						<Button asChild>
 							<Link
-								href="mailto:info@joebaconconsulting.com?subject=Marketing%20and%20Communications%20Enquiry"
+								href="#contact"
 								aria-label="Send an email to book a free marketing and communications consultation with Joe Bacon"
 							>
 								Free consultation <CalendarCheck2 />
