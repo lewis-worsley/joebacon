@@ -18,7 +18,7 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import { Textarea } from "./ui/textarea";
-import FAQ from "./FAQ";
+// import FAQ from "./FAQ";
 
 const ContactFormSchema = z.object({
 	email: z.string().email("Please enter a valid email address"),
@@ -155,11 +155,11 @@ const ContactForm = () => {
 						</form>
 					</Form>
 				</div>
-				<div className="space-y-5 md:col-span-1 text-center">
+				{/* <div className="space-y-5 md:col-span-1 text-center">
 					<h3 className="text-xl pt-10 px-10">Helpful information</h3>
 					<p>Lorem ipsum odor amet, consectetuer adipiscing elit. Nisl dignissim mauris imperdiet dictum ultricies.</p>
 					<FAQ />
-				</div>
+				</div> */}
 			</div>
 		</section>
 	);
