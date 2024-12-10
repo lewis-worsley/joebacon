@@ -53,10 +53,6 @@ export const navLinks = [
 		label: "About",
 		href: "#about",
 	},
-	{
-		label: "Testimonials",
-		href: "#testimonials",
-	}
 ];
 
 export const tabsData = [
